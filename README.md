@@ -7,36 +7,33 @@ This is a Cookiecutter template that i personally use for my data analysis/scien
  - Python 2.7 or 3.5
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
-``` bash
+```
 $ pip install cookiecutter
 ```
 
 or
 
-``` bash
+```
 $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
 
-## To start a new project, run:
+## To start a new project using this template:
 ------------
 
-    cookiecutter https://github.com/GITHUB LINK
-
+*If you are using the project for the first time, run the following in a terminal:
+```
+cookiecutter https://github.com/ejgenc/Cookiecutter-ejg-data-analysis
+```
 
 ## The resulting directory structure
 ------------
-
-The directory structure of your new project looks like this: 
 
 --------
 ```
     ├── LICENSE            < - License for the codes responsible in creating this data analysis projects.
     |
-    |
-    |
-    ├── README.md          <- The top-level README for developers using this project.
-    |
+    ├── README.md          <- The top-level README for the users of this project.
     |
     ├── data
     │   ├── external       <- Data from third party sources.
@@ -50,15 +47,35 @@ The directory structure of your new project looks like this:
     |
     |
     |── media              <- Contains internally generated figures and external photos. Internally generated figures come with a license.
-        ├── external_media <- Images and media downloaded from third party resources. A .txt file of references and attribution is included.
-    │   ├── figures        <- Data visualizations generated through scripts
+    |    ├── external_media <- Images and media downloaded from third party resources. A .txt file of references and attribution is included.
+    │    ├── figures        <- Data visualizations generated through scripts
     |                                             
     |
     |
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
+    |
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │
+    |
+    |
+    |── self documentation <- Contains notes and checklists about various procedures.
+    |
+    |
+    ├── src                         <- Source code for use in this project.
+    │   |
+    │   │
+    │   ├── data_preparation        <- Scripts to download or generate data
+    │   |
+    |   |── data_analysis           <- Scripts to generate intermediary datasets to base visualizations on.                           
+    |   |   
+    │   └── visualization           <- Scripts to create visualizations.
+    │       
+    ├── tests                       <- Contains test modules that test the data analysis pipeline.
+    |   |
+    |   ├── unit_tests              <- Contains unit tests that test custom functions
+    |   |
+    |   ├── data_quality_tests      <- Contains data quality tests that test raw, processed and intermediary datasets.
+    |                        
     |
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
@@ -67,19 +84,18 @@ The directory structure of your new project looks like this:
     |── environment.yml    <- A .yml file for reproducing the analysis environment.
     |
     │
-    |── dodo.py            <- A file that contains all the information needed to run automation package Doit.
+    |── dodo.py            <- A file that contains all the information needed to run automation package Doit. Used to implement DAG structure.
     |
-    ├── src                         <- Source code for use in this project.
-    │   |
-    │   │
-    │   ├── data_preparation        <- Scripts to download or generate data
-    │   │   └── prepare_data.py     <- Final script to run all cleaning and prepration subscripts.
-    |   |
-    |   |── data_analysis           <- Scripts to generate intermediary datasets to base visualizations on.                           
-    |   |   └──analyze_data.py      <- Final script to run all analysis subscripts.
-    │   │
-    │   └── visualization           <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize_data.py   <- Final script to run all visualization subscripts.
+    |
+    |── setup.py           <- A file that contains information about the packaging of the code.
+    |
+    |
+    |── .gitignore         <- A file to specify which folders/files will be flagged with gitignore
+    |
+    |── .env               <- A file that can contain sensitive information such as passwords, hash keys etc. Flagged with .gitignore.
+    |                            ATTENTION! DO NOT COMMIT THIS FILE TO GIT!
+    |
+    |
 ```
 --------
 

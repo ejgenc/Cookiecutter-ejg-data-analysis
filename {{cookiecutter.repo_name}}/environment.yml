@@ -1,0 +1,8 @@
+name: foo
+channels:
+  - defaults
+dependencies:
+  - pytest
+  - pip
+  - pip:
+    - .
