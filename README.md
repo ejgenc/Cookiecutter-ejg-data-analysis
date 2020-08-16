@@ -21,7 +21,7 @@ $ conda install cookiecutter
 ## To start a new project using this template:
 ------------
 
-*If you are using the project for the first time, run the following in a terminal:
+If you are using the project for the first time, run the following in a terminal:
 ```
 cookiecutter https://github.com/ejgenc/Cookiecutter-ejg-data-analysis
 ```
