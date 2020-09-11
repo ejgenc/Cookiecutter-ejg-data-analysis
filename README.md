@@ -68,7 +68,7 @@ cookiecutter https://github.com/ejgenc/Cookiecutter-ejg-data-analysis
     │   |
     |   |── data_analysis           <- Scripts to generate intermediary datasets to base visualizations on.                           
     |   |   
-    │   └── visualization           <- Scripts to create visualizations.
+    │   └── data_visualization           <- Scripts to create visualizations.
     │       
     ├── tests                       <- Contains test modules that test the data analysis pipeline.
     |   |

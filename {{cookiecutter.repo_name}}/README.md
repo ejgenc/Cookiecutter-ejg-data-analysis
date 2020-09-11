@@ -106,7 +106,7 @@ Below is a document tree of this project for those who wish to explore further.
     │   |
     |   |── data_analysis           <- Scripts to generate intermediary datasets to base visualizations on.                           
     |   |   
-    │   └── visualization           <- Scripts to create visualizations.
+    │   └── data_visualization           <- Scripts to create visualizations.
     │       
     ├── tests                       <- Contains test modules that test the data analysis pipeline.
     |   |
