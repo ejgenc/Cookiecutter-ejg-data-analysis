@@ -79,10 +79,6 @@ cookiecutter https://github.com/ejgenc/Cookiecutter-ejg-data-analysis
     |   ├── data_quality_tests      <- Contains data quality tests that test raw, processed and intermediary datasets.
     |                        
     |
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    |
-    |
     |── environment.yml    <- A .yml file for reproducing the analysis environment.
     |
     │
